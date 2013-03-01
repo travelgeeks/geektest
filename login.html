@@ -40,14 +40,18 @@
               <option value="needed">Spain</option>
             </select>
             <label style="font-style:bold; font-family:'Calibri',sans serif; color:#000080; font-size:large">City:</label>
-            <select>
+            <select name="city">
               <option value="" selected>--city--</option>
               <option value="What">Paris</option>
               <option value="ever">Lyon</option>
               <option value="value">Toulouse</option>
               <option value="needed">Bordeux</option>
             </select>
-            <button type="submit" class="btn" style="background:#2C3939; color:#FDF5E6">Explore!</button>
+            <button type="submit" class="btn" style="background:#2C3939; color:#FDF5E6">
+              <a href="/<%=city%>.html">
+                Explore!
+              </a>
+            </button>
           </form>
 
     </body>
