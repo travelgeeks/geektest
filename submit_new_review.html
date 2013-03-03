@@ -41,7 +41,13 @@
           <img src="http://i1310.photobucket.com/albums/s647/skylarian/post_review_zps7a38036d.png">
         </legend>
         <br/>
-        <label>[Route Name]</label>
+        <label id="route">[Route Name]</label>
+          <script>
+            var frm_element = document.getElementById('xxx');
+            var x = frm_element.elements[0].value;
+            var routeName = document.getElementById('route');
+            routeName.innerHTML = x;
+          </script>
           <textarea rows="4" class="span12" placeholder="How was your trip?"></textarea>
         <label>Rating:</label>
         <select>
