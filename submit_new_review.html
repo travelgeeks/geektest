@@ -45,13 +45,13 @@
 
     <div class="container-fluid">
       
-    <form>
+    <form action="javascript:processForm()">
       <fieldset>
         <legend>
           <img src="http://i1310.photobucket.com/albums/s647/skylarian/post_review_zps7a38036d.png">
         </legend>
         <br/>
-        <label id="route">[Route Name]</label>
+        <label>[Route Name]</label>
           <textarea rows="4" class="span12" placeholder="How was your trip?" id="review"></textarea>
         <label>Rating:</label>
         <select id="rating">
@@ -61,19 +61,10 @@
           <option>4</option>
           <option>5 AWESOME!</option>
         </select>
-        <button class="btn" type="submit" style="background:#2C3939; color:#FDF5E6" onsubmit="processForm()">Submit</button>
+        <button class="btn" style="background:#2C3939; color:#FDF5E6">Submit</button>
         <button type="button" class="btn">Cancel</button>
       </fieldset>
     </form>
-    
-    <script>
-      var url = location.href;
-      if(url == "http://travelgeeks.github.com/geektest/submit_new_review.html?RouteName=Paris+Top+5")
-      {
-        var route="You are reviewing Paris Top 5!";
-        document.getElementById("route").innerHTML=route;
-      }
-    </script>
     
     </div>           
      
