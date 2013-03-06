@@ -51,7 +51,14 @@
       </div>
       
       <h4 class="text-center">Rating: 4.3/5</h4>
-      <h3>User123 at 18:41pm:</h3>
+      <script>
+        var newReview=sessionStorage.getItem("review");
+        if(newReview!=null){
+          document.write("<h3>UserABC at 18:47pm:</h3>");
+          document.write(newReview);
+        }
+      </script>
+      <h3>User123 at 19:41pm:</h3>
       This route is really awesome! Explored all the places I wanted to today!
       <h3>User456 at 17:39pm:</h3>
       Bahhhh this route should have included more places for me to shop at! Giving only 3 stars...
