@@ -53,7 +53,7 @@
       <h4 class="text-center">Rating: 4.3/5</h4>
       <script>
         var newReview=sessionStorage.getItem("review");
-        if(newReview!=null){
+        if(newReview!="null"){
           document.write("<h3>UserABC at 18:47pm:</h3>");
           document.write(newReview.text);
         }
