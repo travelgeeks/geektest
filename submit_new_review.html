@@ -17,8 +17,8 @@
     
     <script>
       function processForm() {
-        var review = document.getElementById("review");
-        var rating = document.getElementById("rating");
+        var review = document.getElementById("review").text;
+        var rating = document.getElementById("rating").text;
         sessionStorage.setItem("review", review);
         sessionStorage.setItem("rating", rating);
         window.location="paris_standard_route1_reviews.html";
